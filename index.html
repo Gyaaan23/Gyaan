@@ -120,7 +120,23 @@
             color: var(--primary);
         }
         
-        .about {
+        .about
+        <section class="founder-section">
+    <div class="container">
+        <h2>Our Founder</h2>
+        <div class="founder-profile">
+            <img src="images/founder.jpg" alt="Dr. [Name], Founder of Gyanna" class="founder-photo">
+            <div class="founder-bio">
+                <h3>Dr. [Full Name]</h3>
+                <p class="title">Founder & CEO</p>
+                <p>[Detailed biography text...]</p>
+                <p>[Education/achievements...]</p>
+                <p>[Vision/mission statement...]</p>
+            </div>
+        </div>
+    </div>
+</section>        
+        {
             background-color: var(--secondary);
             padding: 4rem 2rem;
         }
@@ -226,9 +242,57 @@
                 grid-template-columns: 1fr;
             }
         }
-    </style>
+    </style> 
+    /* Founder Section Styling */
+.founder-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.founder-profile {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+.founder-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 5px solid white;
+}
+
+.founder-bio h3 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.founder-bio .title {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .founder-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .founder-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
 </head>
-<body>
+<>
     <header>
         <div class="logo">GYANNA</div>
         <nav>
